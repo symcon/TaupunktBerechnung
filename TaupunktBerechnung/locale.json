@@ -1,0 +1,11 @@
+{
+    "translations": {
+        "de": {
+            "Humidity": "Luftfeuchtigkeit",
+            "Room temperature": "Raumtemperatur",
+            "One Variable is missing": "Eine Variable fehlt",
+            "Dew Point": "Taupunkt",
+            "Risk of Mold": "Schimmelgefahr"
+        }
+    }
+}

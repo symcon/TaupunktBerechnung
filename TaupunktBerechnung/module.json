@@ -1,0 +1,14 @@
+{
+    "id": "{13256EB4-B315-B77E-B17B-B3C0196B8A56}",
+    "name": "TaupunktBerechnung",
+    "type": 3,
+    "vendor": "",
+    "aliases": [
+        "Taupunkt Berechnung"
+    ],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "TB",
+    "url": "https://github.com/symcon/taupunktberechnung/taupunktberechnung"
+}

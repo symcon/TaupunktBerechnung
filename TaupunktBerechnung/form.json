@@ -1,0 +1,30 @@
+{
+    "elements": [
+        {
+            "type": "SelectVariable",
+            "caption": "Room temperature",
+            "name": "RoomTemperature",
+            "validVariableTypes": [
+                1,
+                2
+            ]
+        },
+        {
+            "type": "SelectVariable",
+            "caption": "Humidity",
+            "name": "Humidity",
+            "validVariableTypes": [
+                1,
+                2
+            ]
+        }
+    ],
+    "actions": [],
+    "status": [
+        {
+            "code": 200,
+            "icon": "error",
+            "caption": "One Variable is missing"
+        }
+    ]
+}
