@@ -5,7 +5,8 @@
             "Room temperature": "Raumtemperatur",
             "One Variable is missing": "Eine Variable fehlt",
             "Dew Point": "Taupunkt",
-            "Risk of Mold": "Schimmelgefahr"
+            "Risk of Mold Temperature": "Temperatur der Schimmelgefahr",
+            "Alert Risk of Mold": "Alarm für Schimmelgefahr"
         }
     }
 }

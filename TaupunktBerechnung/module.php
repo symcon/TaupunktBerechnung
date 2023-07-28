@@ -11,8 +11,9 @@ declare(strict_types=1);
             $this->RegisterPropertyInteger('Humidity', 0);
             $this->RegisterPropertyInteger('RoomTemperature', 0);
 
-            $this->RegisterVariableFloat('DewPoint', 'Dew Point', '~Temperature', 0);
-            $this->RegisterVariableFloat('MoldRisk', 'Risk of Mold', '~Temperature', 0);
+            $this->RegisterVariableFloat('DewPoint', $this->Translate('Dew Point'), '~Temperature', 0);
+            $this->RegisterVariableFloat('MoldRisk', $this->Translate('Risk of Mold Temperature'), '~Temperature', 1);
+            $this->RegisterVariableBoolean('MoldAlert', $this->Translate('Alert Risk of Mold'), '~Alert', 2);
         }
 
         public function Destroy()
@@ -46,6 +47,9 @@ declare(strict_types=1);
             //Register necessary messages
             $this->RegisterMessage($humidityID, VM_UPDATE);
             $this->RegisterMessage($temperatureID, VM_UPDATE);
+
+            //Initial calculation
+            $this->Calculate();
         }
 
         public function MessageSink($TimeStamp, $SenderID, $Message, $Data)
@@ -139,6 +143,28 @@ declare(strict_types=1);
             //Source https://sicherheitsingenieur.nrw/rechner/taupunkt-berechnen-schimmelgefahr/
 
             $dewPoint = $this->CalculateDewPoint($humidity, $temperature);
-            return $dewPoint + 3.3;
+            $moldPoint = $dewPoint + 3.3;
+
+            $this->SetAlert($moldPoint, $temperature);
+
+            return $moldPoint;
+        }
+
+        private function SetAlert($moldPoint, $temperature)
+        {
+            //Set Alert true if it is false and moldpoint higher equal than temperature
+            //Set Alert false if it is true and temperature is higher than moldpoint +1°C
+
+            $alert = $this->GetValue('MoldAlert');
+
+            $this->SendDebug('AlertValue', $alert, 0);
+            $this->SendDebug('Moldpoint', $moldPoint, 0);
+            $this->SendDebug('Temperature', $temperature, 0);
+
+            if (!$alert && ($moldPoint >= $temperature)) {
+                $this->SetValue('MoldAlert', true);
+            } elseif ($alert && (($moldPoint + 1) < $temperature)) {
+                $this->SetValue('MoldAlert', false);
+            }
         }
     }

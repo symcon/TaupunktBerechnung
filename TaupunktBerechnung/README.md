@@ -42,7 +42,8 @@ Die Statusvariablen/Kategorien werden automatisch angelegt. Das Löschen einzeln
 
 #### Statusvariablen
 
-Name                 | Typ     | Beschreibung
--------------------- | ------- | ------------
-Taupunkt             | float   | Temperatur, bei unterschreiten wird überschüssiger Wasserdampf sich in Wasser wandeln 
-Schimmelbefallrisiko | float   | Temperatur, bei unterschreiten dieser steigt das Risiko des Schimmelbefalls
+Name                          | Typ     | Beschreibung
+----------------------------- | ------- | ------------
+Taupunkt                      | float   | Temperatur, bei unterschreiten wird überschüssiger Wasserdampf sich in Wasser wandeln 
+Temperatur für Schimmelgefahr | float   | Temperatur, bei unterschreiten dieser steigt das Risiko des Schimmelbefalls
+Alarm für Schimmelgefahr      | boolean | Alarm, welcher auslöst wenn die Temperatur für Schimmelgefahr unterschritten wird. Ausgeschaltet wird dieser, wenn die Raumtemperatur 1°C über der Temperatur für Schimmelgefahr ist.
