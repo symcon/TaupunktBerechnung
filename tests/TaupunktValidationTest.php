@@ -11,8 +11,8 @@ class TaupunktValidationTest extends TestCaseSymconValidation
         $this->validateLibrary(__DIR__ . '/..');
     }
 
-    public function testValidateTaupunktModule(): void
+    public function testValidateDewPointTemperatureCalculationModule(): void
     {
-        $this->validateModule(__DIR__ . '/../TaupunktBerechnung');
+        $this->validateModule(__DIR__ . '/../DewPointTemperatureCalculation');
     }
 }

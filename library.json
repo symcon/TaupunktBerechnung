@@ -1,6 +1,6 @@
 {
     "id": "{22AD9A67-64BC-F966-C837-816055606304}",
-    "name": "TaupunktBerechnung",
+    "name": "DewPointTemperatureCalculation",
     "author": "Symcon GmbH",
     "url": "https://github.com/symcon/taupunktberechnung",
     "compatibility": {

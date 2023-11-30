@@ -1,0 +1,15 @@
+{
+    "translations": {
+        "de": {
+            "Humidity": "Luftfeuchtigkeit",
+            "Room temperature": "Raumtemperatur",
+            "One Variable is missing": "Eine Variable fehlt",
+            "Dew Point": "Taupunkt",
+            "Risk of Mold Temperature": "Temperatur der Schimmelgefahr",
+            "Alert Risk of Mold": "Alarm für Schimmelgefahr",
+            "Dew Point Temperature Calculation": "Taupunkt Berechnung",
+            "https://www.symcon.de/en/service/documentation/module-reference/dew-point-temperature-calculation/": "https://www.symcon.de/de/service/dokumentation/modulreferenz/taupunkt-berechnen/",
+            "DewPointTemperatureCalculation": "TaupunktBerechnung"
+        }
+    }
+}
