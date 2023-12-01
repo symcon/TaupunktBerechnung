@@ -6,7 +6,7 @@
   </php>
   <source>
     <include>
-      <directory suffix=".php">../TaupunktBerechnung</directory>
+      <directory suffix=".php">../DewPointTemperatureCalculation</directory>
     </include>
   </source>
 </phpunit>

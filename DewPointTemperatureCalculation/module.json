@@ -1,14 +1,14 @@
 {
     "id": "{13256EB4-B315-B77E-B17B-B3C0196B8A56}",
-    "name": "TaupunktBerechnung",
+    "name": "DewPointTemperatureCalculation",
     "type": 3,
     "vendor": "",
     "aliases": [
-        "Taupunkt Berechnung"
+        "Dew Point Temperature Calculation"
     ],
     "parentRequirements": [],
     "childRequirements": [],
     "implemented": [],
     "prefix": "TB",
-    "url": "https://github.com/symcon/taupunktberechnung/taupunktberechnung"
+    "url": "https://www.symcon.de/en/service/documentation/module-reference/dew-point-temperature-calculation/"
 }
