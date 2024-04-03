@@ -6,5 +6,5 @@
 
 Folgende Module beinhaltet das TaupunktBerechnung Repository:
 
-- __TaupunktBerechnung__ ([Dokumentation](TaupunktBerechnung))  
+- __TaupunktBerechnung__ ([Dokumentation](https://www.symcon.de/de/service/dokumentation/modulreferenz/taupunkt-berechnen/))  
 	Berechnung der Taupunkttemperatur. 
